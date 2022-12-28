@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --background: #fef3f7;
+  --black: #1f3247;
+  --violet: #6347f9;
+  --violet-light: #6347f9cf;
+  --brown-light: #dfd3c3;
+  --shadow: #0607122a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  background: var(--background);
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 0px 30px 0px 30px;
+  top: 0;
+  z-index: 2;
+  background: var(--background);
+}
+/*navbar*/
+.nav-title {
+  color: var(--black);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  gap: 25px;
+}
+.nav-list a {
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--black);
+  transition: 1s;
+}
+.nav-list a:hover {
+  color: var(--violet-light);
+}
+
+/*hero*/
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 30px;
+}
+.hero-text {
+  padding-top: 50px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-text h1 {
+  font-size: 90px;
+  color: var(--black);
+}
+
+.hero-text p {
+  font-size: 20px;
+  color: var(--black);
+}
+
+.hero-img {
+  min-width: 700px;
+  filter: drop-shadow(0 0 0.75rem var(--shadow));
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-text-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px 0px 30px;
+}
+.hero-text-info-content {
+  max-width: 900px;
+  margin-bottom: 30px;
+}
+.hero-text-info-content p {
+  color: var(--black);
+}
+/*buttons*/
+.btn {
+  border-radius: 20px;
+  background-color: var(--violet);
+  border: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  color: var(--background);
+  transition: 1s;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: var(--violet-light);
+}
+
+.btn-outline {
+  border-radius: 20px;
+  border: 1px solid var(--violet);
+  cursor: pointer;
+  padding: 8px 20px;
+  color: var(--violet);
+  transition: 1s;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  border: 1px solid var(--violet-light);
+  background: var(--violet-light);
+  color: var(--background);
+}
